@@ -127,6 +127,7 @@ def groupTheRhymes():
   print "<h1 class='title'>Why can't I love you without complications?</h1>"
   print "<h1 class='subtitle'>a reference book of explanations</h1>"
   print "<div class'author'>https://github.com/moonmilk/explanations</div>"
+  print "</div>"
   
   print "<div class='contents'><h2 class='contentshead'>Table of Contents</h2>"
   print "<ul class='contentslist'>"
