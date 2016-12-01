@@ -39,7 +39,7 @@ I collected hundreds of thousands of tweets that begin with WHY or BECAUSE, and 
 682838915875639296	BECAUSE I AM SO NOT LIVING RIGHT NOW	0111111011	B IH0 K AO1 Z  , AY1  , AE1 M  , S OW1  , N AA1 T  , L IH1 V IH0 NG  , R AY1 T  , N AW1 
 ```
 
-That's the tweet ID, all the words from the tweet that also exist in the CMU Pronouncing Dictionary (CMUDict), and finally the pronunciation of the tweet as determined by CMUDict. I neglected to save the original tweet text!
+That's the tweet ID, all the words from the tweet that also exist in the CMU Pronouncing Dictionary (CMUDict), and finally the meter and pronunciation of the tweet as determined by CMUDict. I neglected to save the original tweet text!
 
 `splitter.py` splits the why and because files into thousands of subfiles based on their metrical rhythm, in a probably misguided attempt to conserve memory space in the next step. I only try to rhyme sentences that have the same meter, so no use loading up all those sentences with different meters. (Though in fact it sounded better when I told it to ignore the first syllable of 'because' in matching meters, so that's what the final version does.)
 
