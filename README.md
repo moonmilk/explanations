@@ -1,6 +1,8 @@
 # explanations
 A book of explanations: a project for nanogenmo 2016
 
+Download the finished novel from https://github.com/moonmilk/explanations/raw/master/explanations.pdf
+
 ```
 WHY BE SEDUCED BY THE PAST IT WASN'T PLEASANT 
 BECAUSE SUBJECTIVITY IS OMNIPRESENT 
