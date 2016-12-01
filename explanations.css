@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300|Libre+Baskerville|PT+Sans+Narrow');
+
+@page {
+    size: 5.5in 8in;
+    
+}
+
+
+
+body {
+  font-family: Libre Baskerville;
+  font-size: 14;
+}
+
+.titlepage {
+  padding-top: 150;
+}
+.contents {
+  padding-top: 40;
+}
+
+h1 {
+  font-family: PT Sans Narrow;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: -2;
+  margin-bottom: 0;
+  font-size: 28;
+}
+h2 {
+  font-family: PT Sans Narrow;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.subtitle {
+  margin-top: 5;
+  font-style: italic;
+  margin-bottom: 25;
+}
+.author {
+  font-size: 20;
+}
+
+
+.contents {
+  page-break-before: always;
+}
+
+.chapterhead {
+  page-break-before: always;
+}
+
+
+.pair {
+  page-break-inside: avoid 
+}
+
+.why {
+  
+}
+.because {
+  margin-bottom: 1em;
+}
