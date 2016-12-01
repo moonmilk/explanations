@@ -41,12 +41,12 @@ I collected hundreds of thousands of tweets that begin with WHY or BECAUSE, and 
 
 That's the tweet ID, all the words from the tweet that also exist in the CMU Pronouncing Dictionary (CMUDict), and finally the pronunciation of the tweet as determined by CMUDict. I neglected to save the original tweet text!
 
-`splitter.py` splits the why and because files into thousands of subfiles based on their metrical rhythm, in a probably misguided attempt to conserve memory space in the next step.
+`splitter.py` splits the why and because files into thousands of subfiles based on their metrical rhythm, in a probably misguided attempt to conserve memory space in the next step. I only try to rhyme sentences that have the same meter, so no use loading up all those sentences with different meters. (Though in fact it sounded better when I told it to ignore the first syllable of 'because' in matching meters, so that's what the final version does.)
 
 `uniqify.py` looks at each of the split files and removes duplicate texts.
 
 `rhymer.py` goes through each of the different metrical rhythm files and for each _because_ line, attempts to find a rhyming _why_ line. I saved the results in the file `firstrun.rhymes`, which despite the name is not the first run - I kept rerunning the command with the same filename.
 
-I used `sorter.py` to get some information about what was in the rhymes file, like finding the most common words (`topwords.txt`), which I then used to make a list of about 25 subject categories. I used those categories to sort the questions and answers, and then pick up to 140 question-answer pairs for each chapter of the resulting book. It prints out the chapters of the book as an html file `explanations.html`.
+I used `sorter.py` to get some information about what was in the rhymes file, like finding the most common words (`topwords.txt`), which I then used to make a list of about 25 subject categories. I used those categories to sort the questions and answers, and then pick up to 140 question-answer pairs for each chapter of the resulting book. (It's also encouraged to make a sorting mistake now and then, for variety.) It prints out the chapters of the book as an html file `explanations.html`. 
 
 I made a css file `explanations.css` with some advice from Liza Daly to make the printed version of the text look better. I printed the html file in Chrome to create the final pdf file `explanations.pdf`.
